@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.6.0;
 
-import "./node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "../app/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract LOLSkinMarketplace is ERC721 {
     struct Skin {
