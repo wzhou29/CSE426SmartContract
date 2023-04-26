@@ -4,13 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="cse426.js"></script>
+  <script src="app.js"></script>
   <script src="../index.js"></script>
   <link rel="stylesheet" href="index.css">
   <title>Skin Market</title>
 </head>
 <body>
   <h1>Market Place of League of Legends</h1>
-  
+  <form id="add-skin-form">
+    <h2>Add Skin</h2>
+    <label for="skin-name">Name:</label>
+    <input type="text" id="skin-name" required>
+    <button type="submit">Add</button>
+  </form>
+  <h2>For Sale</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Buy</th>
+      </tr>
+    </thead>
+    <tbody id="for-sale-skins">
+    </tbody>
+  </table>
+  <h2>My Skins</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="my-skins">
+    </tbody>
+  </table>
 </body>
 </html>
