@@ -48,4 +48,3 @@ contract LOLSkinMarketplace is ERC721 {
         _safeMint(msg.sender, tokenId);
     }
 }
-
