@@ -1,10 +1,28 @@
-body{
-    background-color: bisque;
-}
 h1{
+    font-weight: bold;
+    font-family: cursive;
     border: dotted;
-    border-radius: 25px;
     text-align: center;
+    height: 65px;
+    background: skyblue;
 }
-#connect{
+button:first-of-type{
+    background: lightblue;
+    border-radius: 15px;
+}
+button:hover{
+    background: rgb(154, 202, 219);
+    font-weight: bold;
+}
+#connect:first-of-type{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#add:first-of-type{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+table:first-of-type{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
