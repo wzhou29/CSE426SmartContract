@@ -451,6 +451,7 @@ abi = [
 window.onload = function(){
   connectMetaMask()
   EventListener()
+  setInterval(Update,1)
 }
 
 window.ethereum.on("accountsChanged", () => {
@@ -460,6 +461,25 @@ window.ethereum.on("accountsChanged", () => {
 window.ethereum.on("chainChanged", () => {
   GetAccountAddress()
 });
+
+function Update(){
+	if (Skins.length != 0){
+		ListAll = document.getElementById('ListOfSkin')
+		ListOwn = document.getElementById('ListOfOwnSkin')
+		a = ""
+		o = ""
+		for (i=0;i<Skins.length;i++){
+			if (Skins[i].owner == AccountAddress){
+				o += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
+			}
+			else{
+				a += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>"+ Skins.owner +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
+			}
+		}
+		ListAll.innerHTML = a
+		ListOwn.innerHTML = o
+	}
+}
 
 function connectMetaMask(){
   if (typeof web3 !== "undefined") {
@@ -483,6 +503,17 @@ async function GetAccountAddress(){
   }
   Contract = Contracts[AccountAddress]
 }
+class Skin{
+	constructor() {
+		this.id = 0;
+		this.name = '';
+		this.owner = '';
+		this.price = 0;
+		this.ForSale = false;
+	}
+}
+const Skins = []
+SkinId = 0
 
 function EventListener(){
   // connect button
@@ -500,6 +531,12 @@ function EventListener(){
 	.send({from: AccountAddress})
 	.on("receipt", (receipt) => {
         alert("Success")
+		s = new Skin()
+		s.id = SkinId
+		s.name = value
+		s.owner = AccountAddress
+		SkinId+=1
+		Skins.push(s)
       })
       .on("error", (err) => {
         alert("Error")
