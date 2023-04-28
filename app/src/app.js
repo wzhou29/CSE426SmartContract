@@ -473,7 +473,7 @@ function Update(){
 				o += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
 			}
 			else{
-				a += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>"+ Skins.owner +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
+				a += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>"+ Skins[i].owner +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
 			}
 		}
 		ListAll.innerHTML = a
