@@ -233,45 +233,45 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/access/AccessControlCrossChain.sol",
     "exportedSymbols": {
       "AccessControl": [
-        522
+        531
       ],
       "AccessControlCrossChain": [
-        577
+        586
       ],
       "Context": [
-        22275
+        22284
       ],
       "CrossChainEnabled": [
-        1360
+        1369
       ],
       "ERC165": [
-        24371
+        24380
       ],
       "IAccessControl": [
-        775
+        784
       ],
       "IERC165": [
-        24687
+        24696
       ],
       "InvalidCrossChainSender": [
-        1664
+        1673
       ],
       "Math": [
-        25656
+        25665
       ],
       "NotCrossChainCall": [
-        1658
+        1667
       ],
       "Strings": [
-        22720
+        22729
       ]
     },
-    "id": 578,
+    "id": 587,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 524,
+        "id": 533,
         "literals": [
           "solidity",
           "^",
@@ -284,11 +284,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/access/AccessControl.sol",
         "file": "./AccessControl.sol",
-        "id": 525,
+        "id": 534,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 578,
-        "sourceUnit": 523,
+        "scope": 587,
+        "sourceUnit": 532,
         "src": "143:29:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -296,11 +296,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/CrossChainEnabled.sol",
         "file": "../crosschain/CrossChainEnabled.sol",
-        "id": 526,
+        "id": 535,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 578,
-        "sourceUnit": 1361,
+        "scope": 587,
+        "sourceUnit": 1370,
         "src": "173:45:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -310,31 +310,31 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 528,
+              "id": 537,
               "name": "AccessControl",
               "nameLocations": [
                 "1075:13:2"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 522,
+              "referencedDeclaration": 531,
               "src": "1075:13:2"
             },
-            "id": 529,
+            "id": 538,
             "nodeType": "InheritanceSpecifier",
             "src": "1075:13:2"
           },
           {
             "baseName": {
-              "id": 530,
+              "id": 539,
               "name": "CrossChainEnabled",
               "nameLocations": [
                 "1090:17:2"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1360,
+              "referencedDeclaration": 1369,
               "src": "1090:17:2"
             },
-            "id": 531,
+            "id": 540,
             "nodeType": "InheritanceSpecifier",
             "src": "1090:17:2"
           }
@@ -343,21 +343,21 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 527,
+          "id": 536,
           "nodeType": "StructuredDocumentation",
           "src": "220:809:2",
           "text": " @dev An extension to {AccessControl} with support for cross-chain access management.\n For each role, is extension implements an equivalent \"aliased\" role that is used for\n restricting calls originating from other chains.\n For example, if a function `myFunction` is protected by `onlyRole(SOME_ROLE)`, and\n if an address `x` has role `SOME_ROLE`, it would be able to call `myFunction` directly.\n A wallet or contract at the same address on another chain would however not be able\n to call this function. In order to do so, it would require to have the role\n `_crossChainRoleAlias(SOME_ROLE)`.\n This aliasing is required to protect against multiple contracts living at the same\n address on different chains but controlled by conflicting entities.\n _Available since v4.6._"
         },
         "fullyImplemented": false,
-        "id": 577,
+        "id": 586,
         "linearizedBaseContracts": [
-          577,
-          1360,
-          522,
-          24371,
-          24687,
-          775,
-          22275
+          586,
+          1369,
+          531,
+          24380,
+          24696,
+          784,
+          22284
         ],
         "name": "AccessControlCrossChain",
         "nameLocation": "1048:23:2",
@@ -366,12 +366,12 @@
           {
             "constant": true,
             "functionSelector": "f9d04295",
-            "id": 536,
+            "id": 545,
             "mutability": "constant",
             "name": "CROSSCHAIN_ALIAS",
             "nameLocation": "1138:16:2",
             "nodeType": "VariableDeclaration",
-            "scope": 577,
+            "scope": 586,
             "src": "1114:72:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -380,7 +380,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 532,
+              "id": 541,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "1114:7:2",
@@ -393,7 +393,7 @@
               "arguments": [
                 {
                   "hexValue": "43524f5353434841494e5f414c494153",
-                  "id": 534,
+                  "id": 543,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -415,7 +415,7 @@
                     "typeString": "literal_string \"CROSSCHAIN_ALIAS\""
                   }
                 ],
-                "id": 533,
+                "id": 542,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -426,7 +426,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 535,
+              "id": 544,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -446,10 +446,10 @@
           },
           {
             "baseFunctions": [
-              299
+              308
             ],
             "body": {
-              "id": 562,
+              "id": 571,
               "nodeType": "Block",
               "src": "1318:174:2",
               "statements": [
@@ -458,18 +458,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 543,
+                      "id": 552,
                       "name": "_isCrossChain",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1353,
+                      "referencedDeclaration": 1362,
                       "src": "1332:13:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
                         "typeString": "function () view returns (bool)"
                       }
                     },
-                    "id": 544,
+                    "id": 553,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -486,7 +486,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 560,
+                    "id": 569,
                     "nodeType": "Block",
                     "src": "1439:47:2",
                     "statements": [
@@ -494,11 +494,11 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 557,
+                              "id": 566,
                               "name": "role",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 539,
+                              "referencedDeclaration": 548,
                               "src": "1470:4:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
@@ -514,18 +514,18 @@
                               }
                             ],
                             "expression": {
-                              "id": 554,
+                              "id": 563,
                               "name": "super",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 4294967271,
                               "src": "1453:5:2",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_super$_AccessControlCrossChain_$577_$",
+                                "typeIdentifier": "t_type$_t_super$_AccessControlCrossChain_$586_$",
                                 "typeString": "type(contract super AccessControlCrossChain)"
                               }
                             },
-                            "id": 556,
+                            "id": 565,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -533,14 +533,14 @@
                             "memberLocation": "1459:10:2",
                             "memberName": "_checkRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 299,
+                            "referencedDeclaration": 308,
                             "src": "1453:16:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$_t_bytes32_$returns$__$",
                               "typeString": "function (bytes32) view"
                             }
                           },
-                          "id": 558,
+                          "id": 567,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -556,17 +556,17 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 559,
+                        "id": 568,
                         "nodeType": "ExpressionStatement",
                         "src": "1453:22:2"
                       }
                     ]
                   },
-                  "id": 561,
+                  "id": 570,
                   "nodeType": "IfStatement",
                   "src": "1328:158:2",
                   "trueBody": {
-                    "id": 553,
+                    "id": 562,
                     "nodeType": "Block",
                     "src": "1349:84:2",
                     "statements": [
@@ -576,11 +576,11 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 547,
+                                  "id": 556,
                                   "name": "role",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 539,
+                                  "referencedDeclaration": 548,
                                   "src": "1395:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bytes32",
@@ -595,18 +595,18 @@
                                     "typeString": "bytes32"
                                   }
                                 ],
-                                "id": 546,
+                                "id": 555,
                                 "name": "_crossChainRoleAlias",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 576,
+                                "referencedDeclaration": 585,
                                 "src": "1374:20:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_bytes32_$returns$_t_bytes32_$",
                                   "typeString": "function (bytes32) pure returns (bytes32)"
                                 }
                               },
-                              "id": 548,
+                              "id": 557,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -626,18 +626,18 @@
                               "arguments": [],
                               "expression": {
                                 "argumentTypes": [],
-                                "id": 549,
+                                "id": 558,
                                 "name": "_crossChainSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1359,
+                                "referencedDeclaration": 1368,
                                 "src": "1402:17:2",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                                   "typeString": "function () view returns (address)"
                                 }
                               },
-                              "id": 550,
+                              "id": 559,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -665,21 +665,21 @@
                                 "typeString": "address"
                               }
                             ],
-                            "id": 545,
+                            "id": 554,
                             "name": "_checkRole",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
-                              563,
-                              338
+                              572,
+                              347
                             ],
-                            "referencedDeclaration": 338,
+                            "referencedDeclaration": 347,
                             "src": "1363:10:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$__$",
                               "typeString": "function (bytes32,address) view"
                             }
                           },
-                          "id": 551,
+                          "id": 560,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -695,7 +695,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 552,
+                        "id": 561,
                         "nodeType": "ExpressionStatement",
                         "src": "1363:59:2"
                       }
@@ -705,12 +705,12 @@
               ]
             },
             "documentation": {
-              "id": 537,
+              "id": 546,
               "nodeType": "StructuredDocumentation",
               "src": "1193:55:2",
               "text": " @dev See {AccessControl-_checkRole}."
             },
-            "id": 563,
+            "id": 572,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -718,23 +718,23 @@
             "nameLocation": "1262:10:2",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 541,
+              "id": 550,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "1309:8:2"
             },
             "parameters": {
-              "id": 540,
+              "id": 549,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 539,
+                  "id": 548,
                   "mutability": "mutable",
                   "name": "role",
                   "nameLocation": "1281:4:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 563,
+                  "scope": 572,
                   "src": "1273:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -743,7 +743,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 538,
+                    "id": 547,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1273:7:2",
@@ -758,12 +758,12 @@
               "src": "1272:14:2"
             },
             "returnParameters": {
-              "id": 542,
+              "id": 551,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1318:0:2"
             },
-            "scope": 577,
+            "scope": 586,
             "src": "1253:239:2",
             "stateMutability": "view",
             "virtual": true,
@@ -771,7 +771,7 @@
           },
           {
             "body": {
-              "id": 575,
+              "id": 584,
               "nodeType": "Block",
               "src": "1660:47:2",
               "statements": [
@@ -781,17 +781,17 @@
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     },
-                    "id": 573,
+                    "id": 582,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 571,
+                      "id": 580,
                       "name": "role",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 566,
+                      "referencedDeclaration": 575,
                       "src": "1677:4:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -801,11 +801,11 @@
                     "nodeType": "BinaryOperation",
                     "operator": "^",
                     "rightExpression": {
-                      "id": 572,
+                      "id": 581,
                       "name": "CROSSCHAIN_ALIAS",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 536,
+                      "referencedDeclaration": 545,
                       "src": "1684:16:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -818,20 +818,20 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 570,
-                  "id": 574,
+                  "functionReturnParameters": 579,
+                  "id": 583,
                   "nodeType": "Return",
                   "src": "1670:30:2"
                 }
               ]
             },
             "documentation": {
-              "id": 564,
+              "id": 573,
               "nodeType": "StructuredDocumentation",
               "src": "1498:73:2",
               "text": " @dev Returns the aliased role corresponding to `role`."
             },
-            "id": 576,
+            "id": 585,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -839,17 +839,17 @@
             "nameLocation": "1585:20:2",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 567,
+              "id": 576,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 566,
+                  "id": 575,
                   "mutability": "mutable",
                   "name": "role",
                   "nameLocation": "1614:4:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 576,
+                  "scope": 585,
                   "src": "1606:12:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -858,7 +858,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 565,
+                    "id": 574,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1606:7:2",
@@ -873,17 +873,17 @@
               "src": "1605:14:2"
             },
             "returnParameters": {
-              "id": 570,
+              "id": 579,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 569,
+                  "id": 578,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 576,
+                  "scope": 585,
                   "src": "1651:7:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -892,7 +892,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 568,
+                    "id": 577,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1651:7:2",
@@ -906,14 +906,14 @@
               ],
               "src": "1650:9:2"
             },
-            "scope": 577,
+            "scope": 586,
             "src": "1576:131:2",
             "stateMutability": "pure",
             "virtual": true,
             "visibility": "internal"
           }
         ],
-        "scope": 578,
+        "scope": 587,
         "src": "1030:679:2",
         "usedErrors": []
       }
@@ -926,7 +926,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:02.608Z",
+  "updatedAt": "2023-04-29T01:39:05.270Z",
   "devdoc": {
     "details": "An extension to {AccessControl} with support for cross-chain access management. For each role, is extension implements an equivalent \"aliased\" role that is used for restricting calls originating from other chains. For example, if a function `myFunction` is protected by `onlyRole(SOME_ROLE)`, and if an address `x` has role `SOME_ROLE`, it would be able to call `myFunction` directly. A wallet or contract at the same address on another chain would however not be able to call this function. In order to do so, it would require to have the role `_crossChainRoleAlias(SOME_ROLE)`. This aliasing is required to protect against multiple contracts living at the same address on different chains but controlled by conflicting entities. _Available since v4.6._",
     "events": {

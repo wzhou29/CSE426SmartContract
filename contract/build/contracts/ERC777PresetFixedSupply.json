@@ -24088,39 +24088,39 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
     "exportedSymbols": {
       "Address": [
-        20679
+        20688
       ],
       "Context": [
-        22275
+        22284
       ],
       "ERC777": [
-        19913
+        19922
       ],
       "ERC777PresetFixedSupply": [
-        20151
+        20160
       ],
       "IERC1820Registry": [
-        24791
+        24800
       ],
       "IERC20": [
-        13472
+        13481
       ],
       "IERC777": [
-        20076
+        20085
       ],
       "IERC777Recipient": [
-        20096
+        20105
       ],
       "IERC777Sender": [
-        20116
+        20125
       ]
     },
-    "id": 20152,
+    "id": 20161,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 20118,
+        "id": 20127,
         "literals": [
           "solidity",
           "^",
@@ -24133,11 +24133,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/token/ERC777/ERC777.sol",
         "file": "../ERC777.sol",
-        "id": 20119,
+        "id": 20128,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 20152,
-        "sourceUnit": 19914,
+        "scope": 20161,
+        "sourceUnit": 19923,
         "src": "141:23:288",
         "symbolAliases": [],
         "unitAlias": ""
@@ -24147,16 +24147,16 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 20121,
+              "id": 20130,
               "name": "ERC777",
               "nameLocations": [
                 "389:6:288"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 19913,
+              "referencedDeclaration": 19922,
               "src": "389:6:288"
             },
-            "id": 20122,
+            "id": 20131,
             "nodeType": "InheritanceSpecifier",
             "src": "389:6:288"
           }
@@ -24165,19 +24165,19 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 20120,
+          "id": 20129,
           "nodeType": "StructuredDocumentation",
           "src": "166:186:288",
           "text": " @dev {ERC777} token, including:\n  - Preminted initial supply\n  - No access control mechanism (for minting/pausing) and hence no governance\n _Available since v3.4._"
         },
         "fullyImplemented": true,
-        "id": 20151,
+        "id": 20160,
         "linearizedBaseContracts": [
-          20151,
-          19913,
-          13472,
-          20076,
-          22275
+          20160,
+          19922,
+          13481,
+          20085,
+          22284
         ],
         "name": "ERC777PresetFixedSupply",
         "nameLocation": "362:23:288",
@@ -24185,7 +24185,7 @@
         "nodes": [
           {
             "body": {
-              "id": 20149,
+              "id": 20158,
               "nodeType": "Block",
               "src": "751:52:288",
               "statements": [
@@ -24193,11 +24193,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 20143,
+                        "id": 20152,
                         "name": "owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20134,
+                        "referencedDeclaration": 20143,
                         "src": "767:5:288",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -24205,11 +24205,11 @@
                         }
                       },
                       {
-                        "id": 20144,
+                        "id": 20153,
                         "name": "initialSupply",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 20132,
+                        "referencedDeclaration": 20141,
                         "src": "774:13:288",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24218,7 +24218,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 20145,
+                        "id": 20154,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24234,7 +24234,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 20146,
+                        "id": 20155,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24268,21 +24268,21 @@
                           "typeString": "literal_string \"\""
                         }
                       ],
-                      "id": 20142,
+                      "id": 20151,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        19399,
-                        19479
+                        19408,
+                        19488
                       ],
-                      "referencedDeclaration": 19399,
+                      "referencedDeclaration": 19408,
                       "src": "761:5:288",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
                         "typeString": "function (address,uint256,bytes memory,bytes memory)"
                       }
                     },
-                    "id": 20147,
+                    "id": 20156,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24298,30 +24298,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 20148,
+                  "id": 20157,
                   "nodeType": "ExpressionStatement",
                   "src": "761:35:288"
                 }
               ]
             },
             "documentation": {
-              "id": 20123,
+              "id": 20132,
               "nodeType": "StructuredDocumentation",
               "src": "402:132:288",
               "text": " @dev Mints `initialSupply` amount of token and transfers them to `owner`.\n See {ERC777-constructor}."
             },
-            "id": 20150,
+            "id": 20159,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 20137,
+                    "id": 20146,
                     "name": "name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 20125,
+                    "referencedDeclaration": 20134,
                     "src": "719:4:288",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -24329,11 +24329,11 @@
                     }
                   },
                   {
-                    "id": 20138,
+                    "id": 20147,
                     "name": "symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 20127,
+                    "referencedDeclaration": 20136,
                     "src": "725:6:288",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -24341,11 +24341,11 @@
                     }
                   },
                   {
-                    "id": 20139,
+                    "id": 20148,
                     "name": "defaultOperators",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 20130,
+                    "referencedDeclaration": 20139,
                     "src": "733:16:288",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -24353,16 +24353,16 @@
                     }
                   }
                 ],
-                "id": 20140,
+                "id": 20149,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 20136,
+                  "id": 20145,
                   "name": "ERC777",
                   "nameLocations": [
                     "712:6:288"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 19913,
+                  "referencedDeclaration": 19922,
                   "src": "712:6:288"
                 },
                 "nodeType": "ModifierInvocation",
@@ -24373,17 +24373,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 20135,
+              "id": 20144,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 20125,
+                  "id": 20134,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "574:4:288",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20150,
+                  "scope": 20159,
                   "src": "560:18:288",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -24392,7 +24392,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 20124,
+                    "id": 20133,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "560:6:288",
@@ -24405,12 +24405,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 20127,
+                  "id": 20136,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "602:6:288",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20150,
+                  "scope": 20159,
                   "src": "588:20:288",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -24419,7 +24419,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 20126,
+                    "id": 20135,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "588:6:288",
@@ -24432,12 +24432,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 20130,
+                  "id": 20139,
                   "mutability": "mutable",
                   "name": "defaultOperators",
                   "nameLocation": "635:16:288",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20150,
+                  "scope": 20159,
                   "src": "618:33:288",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -24447,7 +24447,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 20128,
+                      "id": 20137,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "618:7:288",
@@ -24457,7 +24457,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 20129,
+                    "id": 20138,
                     "nodeType": "ArrayTypeName",
                     "src": "618:9:288",
                     "typeDescriptions": {
@@ -24469,12 +24469,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 20132,
+                  "id": 20141,
                   "mutability": "mutable",
                   "name": "initialSupply",
                   "nameLocation": "669:13:288",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20150,
+                  "scope": 20159,
                   "src": "661:21:288",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -24483,7 +24483,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 20131,
+                    "id": 20140,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "661:7:288",
@@ -24496,12 +24496,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 20134,
+                  "id": 20143,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "700:5:288",
                   "nodeType": "VariableDeclaration",
-                  "scope": 20150,
+                  "scope": 20159,
                   "src": "692:13:288",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -24510,7 +24510,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 20133,
+                    "id": 20142,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "692:7:288",
@@ -24526,19 +24526,19 @@
               "src": "550:161:288"
             },
             "returnParameters": {
-              "id": 20141,
+              "id": 20150,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "751:0:288"
             },
-            "scope": 20151,
+            "scope": 20160,
             "src": "539:264:288",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 20152,
+        "scope": 20161,
         "src": "353:452:288",
         "usedErrors": []
       }
@@ -24551,7 +24551,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:03.261Z",
+  "updatedAt": "2023-04-29T01:39:05.769Z",
   "devdoc": {
     "details": "{ERC777} token, including:  - Preminted initial supply  - No access control mechanism (for minting/pausing) and hence no governance _Available since v3.4._",
     "events": {

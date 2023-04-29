@@ -633,30 +633,30 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/amb/CrossChainEnabledAMB.sol",
     "exportedSymbols": {
       "AMB_Bridge": [
-        30012
+        30021
       ],
       "CrossChainEnabled": [
-        1360
+        1369
       ],
       "CrossChainEnabledAMB": [
-        1410
+        1419
       ],
       "InvalidCrossChainSender": [
-        1664
+        1673
       ],
       "LibAMB": [
-        1454
+        1463
       ],
       "NotCrossChainCall": [
-        1658
+        1667
       ]
     },
-    "id": 1411,
+    "id": 1420,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1362,
+        "id": 1371,
         "literals": [
           "solidity",
           "^",
@@ -669,11 +669,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/CrossChainEnabled.sol",
         "file": "../CrossChainEnabled.sol",
-        "id": 1363,
+        "id": 1372,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1411,
-        "sourceUnit": 1361,
+        "scope": 1420,
+        "sourceUnit": 1370,
         "src": "148:34:166",
         "symbolAliases": [],
         "unitAlias": ""
@@ -681,11 +681,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/amb/LibAMB.sol",
         "file": "./LibAMB.sol",
-        "id": 1364,
+        "id": 1373,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1411,
-        "sourceUnit": 1455,
+        "scope": 1420,
+        "sourceUnit": 1464,
         "src": "183:22:166",
         "symbolAliases": [],
         "unitAlias": ""
@@ -695,16 +695,16 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 1366,
+              "id": 1375,
               "name": "CrossChainEnabled",
               "nameLocations": [
                 "1298:17:166"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1360,
+              "referencedDeclaration": 1369,
               "src": "1298:17:166"
             },
-            "id": 1367,
+            "id": 1376,
             "nodeType": "InheritanceSpecifier",
             "src": "1298:17:166"
           }
@@ -713,16 +713,16 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 1365,
+          "id": 1374,
           "nodeType": "StructuredDocumentation",
           "src": "207:1057:166",
           "text": " @dev https://docs.tokenbridge.net/amb-bridge/about-amb-bridge[AMB]\n specialization or the {CrossChainEnabled} abstraction.\n As of february 2020, AMB bridges are available between the following chains:\n - https://docs.tokenbridge.net/eth-xdai-amb-bridge/about-the-eth-xdai-amb[ETH ⇌ xDai]\n - https://docs.tokenbridge.net/eth-qdai-bridge/about-the-eth-qdai-amb[ETH ⇌ qDai]\n - https://docs.tokenbridge.net/eth-etc-amb-bridge/about-the-eth-etc-amb[ETH ⇌ ETC]\n - https://docs.tokenbridge.net/eth-bsc-amb/about-the-eth-bsc-amb[ETH ⇌ BSC]\n - https://docs.tokenbridge.net/eth-poa-amb-bridge/about-the-eth-poa-amb[ETH ⇌ POA]\n - https://docs.tokenbridge.net/bsc-xdai-amb/about-the-bsc-xdai-amb[BSC ⇌ xDai]\n - https://docs.tokenbridge.net/poa-xdai-amb/about-the-poa-xdai-amb[POA ⇌ xDai]\n - https://docs.tokenbridge.net/rinkeby-xdai-amb-bridge/about-the-rinkeby-xdai-amb[Rinkeby ⇌ xDai]\n - https://docs.tokenbridge.net/kovan-sokol-amb-bridge/about-the-kovan-sokol-amb[Kovan ⇌ Sokol]\n _Available since v4.6._"
         },
         "fullyImplemented": true,
-        "id": 1410,
+        "id": 1419,
         "linearizedBaseContracts": [
-          1410,
-          1360
+          1419,
+          1369
         ],
         "name": "CrossChainEnabledAMB",
         "nameLocation": "1274:20:166",
@@ -731,17 +731,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 1368,
+              "id": 1377,
               "nodeType": "StructuredDocumentation",
               "src": "1322:61:166",
               "text": "@custom:oz-upgrades-unsafe-allow state-variable-immutable"
             },
-            "id": 1370,
+            "id": 1379,
             "mutability": "immutable",
             "name": "_bridge",
             "nameLocation": "1414:7:166",
             "nodeType": "VariableDeclaration",
-            "scope": 1410,
+            "scope": 1419,
             "src": "1388:33:166",
             "stateVariable": true,
             "storageLocation": "default",
@@ -750,7 +750,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1369,
+              "id": 1378,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1388:7:166",
@@ -764,23 +764,23 @@
           },
           {
             "body": {
-              "id": 1380,
+              "id": 1389,
               "nodeType": "Block",
               "src": "1509:33:166",
               "statements": [
                 {
                   "expression": {
-                    "id": 1378,
+                    "id": 1387,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 1376,
+                      "id": 1385,
                       "name": "_bridge",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1370,
+                      "referencedDeclaration": 1379,
                       "src": "1519:7:166",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -790,11 +790,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 1377,
+                      "id": 1386,
                       "name": "bridge",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1373,
+                      "referencedDeclaration": 1382,
                       "src": "1529:6:166",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -807,19 +807,19 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1379,
+                  "id": 1388,
                   "nodeType": "ExpressionStatement",
                   "src": "1519:16:166"
                 }
               ]
             },
             "documentation": {
-              "id": 1371,
+              "id": 1380,
               "nodeType": "StructuredDocumentation",
               "src": "1428:48:166",
               "text": "@custom:oz-upgrades-unsafe-allow constructor"
             },
-            "id": 1381,
+            "id": 1390,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -827,17 +827,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1374,
+              "id": 1383,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1373,
+                  "id": 1382,
                   "mutability": "mutable",
                   "name": "bridge",
                   "nameLocation": "1501:6:166",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1381,
+                  "scope": 1390,
                   "src": "1493:14:166",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -846,7 +846,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1372,
+                    "id": 1381,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1493:7:166",
@@ -862,12 +862,12 @@
               "src": "1492:16:166"
             },
             "returnParameters": {
-              "id": 1375,
+              "id": 1384,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1509:0:166"
             },
-            "scope": 1410,
+            "scope": 1419,
             "src": "1481:61:166",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -875,10 +875,10 @@
           },
           {
             "baseFunctions": [
-              1353
+              1362
             ],
             "body": {
-              "id": 1393,
+              "id": 1402,
               "nodeType": "Block",
               "src": "1685:52:166",
               "statements": [
@@ -886,11 +886,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 1390,
+                        "id": 1399,
                         "name": "_bridge",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1370,
+                        "referencedDeclaration": 1379,
                         "src": "1722:7:166",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -906,18 +906,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 1388,
+                        "id": 1397,
                         "name": "LibAMB",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1454,
+                        "referencedDeclaration": 1463,
                         "src": "1702:6:166",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAMB_$1454_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAMB_$1463_$",
                           "typeString": "type(library LibAMB)"
                         }
                       },
-                      "id": 1389,
+                      "id": 1398,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -925,14 +925,14 @@
                       "memberLocation": "1709:12:166",
                       "memberName": "isCrossChain",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1430,
+                      "referencedDeclaration": 1439,
                       "src": "1702:19:166",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address) view returns (bool)"
                       }
                     },
-                    "id": 1391,
+                    "id": 1400,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -948,20 +948,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1387,
-                  "id": 1392,
+                  "functionReturnParameters": 1396,
+                  "id": 1401,
                   "nodeType": "Return",
                   "src": "1695:35:166"
                 }
               ]
             },
             "documentation": {
-              "id": 1382,
+              "id": 1391,
               "nodeType": "StructuredDocumentation",
               "src": "1548:61:166",
               "text": " @dev see {CrossChainEnabled-_isCrossChain}"
             },
-            "id": 1394,
+            "id": 1403,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -969,29 +969,29 @@
             "nameLocation": "1623:13:166",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 1384,
+              "id": 1393,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "1661:8:166"
             },
             "parameters": {
-              "id": 1383,
+              "id": 1392,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1636:2:166"
             },
             "returnParameters": {
-              "id": 1387,
+              "id": 1396,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1386,
+                  "id": 1395,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1394,
+                  "scope": 1403,
                   "src": "1679:4:166",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1000,7 +1000,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1385,
+                    "id": 1394,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1679:4:166",
@@ -1014,7 +1014,7 @@
               ],
               "src": "1678:6:166"
             },
-            "scope": 1410,
+            "scope": 1419,
             "src": "1614:123:166",
             "stateMutability": "view",
             "virtual": true,
@@ -1022,10 +1022,10 @@
           },
           {
             "baseFunctions": [
-              1359
+              1368
             ],
             "body": {
-              "id": 1408,
+              "id": 1417,
               "nodeType": "Block",
               "src": "1906:56:166",
               "statements": [
@@ -1033,11 +1033,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 1405,
+                        "id": 1414,
                         "name": "_bridge",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1370,
+                        "referencedDeclaration": 1379,
                         "src": "1947:7:166",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1053,18 +1053,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 1403,
+                        "id": 1412,
                         "name": "LibAMB",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1454,
+                        "referencedDeclaration": 1463,
                         "src": "1923:6:166",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibAMB_$1454_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibAMB_$1463_$",
                           "typeString": "type(library LibAMB)"
                         }
                       },
-                      "id": 1404,
+                      "id": 1413,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1072,14 +1072,14 @@
                       "memberLocation": "1930:16:166",
                       "memberName": "crossChainSender",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1453,
+                      "referencedDeclaration": 1462,
                       "src": "1923:23:166",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_address_$",
                         "typeString": "function (address) view returns (address)"
                       }
                     },
-                    "id": 1406,
+                    "id": 1415,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1095,34 +1095,34 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 1402,
-                  "id": 1407,
+                  "functionReturnParameters": 1411,
+                  "id": 1416,
                   "nodeType": "Return",
                   "src": "1916:39:166"
                 }
               ]
             },
             "documentation": {
-              "id": 1395,
+              "id": 1404,
               "nodeType": "StructuredDocumentation",
               "src": "1743:65:166",
               "text": " @dev see {CrossChainEnabled-_crossChainSender}"
             },
-            "id": 1409,
+            "id": 1418,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 1399,
+                "id": 1408,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 1398,
+                  "id": 1407,
                   "name": "onlyCrossChain",
                   "nameLocations": [
                     "1873:14:166"
                   ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 1326,
+                  "referencedDeclaration": 1335,
                   "src": "1873:14:166"
                 },
                 "nodeType": "ModifierInvocation",
@@ -1133,29 +1133,29 @@
             "nameLocation": "1822:17:166",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 1397,
+              "id": 1406,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "1864:8:166"
             },
             "parameters": {
-              "id": 1396,
+              "id": 1405,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1839:2:166"
             },
             "returnParameters": {
-              "id": 1402,
+              "id": 1411,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1401,
+                  "id": 1410,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1409,
+                  "scope": 1418,
                   "src": "1897:7:166",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1164,7 +1164,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1400,
+                    "id": 1409,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1897:7:166",
@@ -1179,14 +1179,14 @@
               ],
               "src": "1896:9:166"
             },
-            "scope": 1410,
+            "scope": 1419,
             "src": "1813:149:166",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
           }
         ],
-        "scope": 1411,
+        "scope": 1420,
         "src": "1265:699:166",
         "usedErrors": []
       }
@@ -1199,7 +1199,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:02.623Z",
+  "updatedAt": "2023-04-29T01:39:05.283Z",
   "devdoc": {
     "details": "https://docs.tokenbridge.net/amb-bridge/about-amb-bridge[AMB] specialization or the {CrossChainEnabled} abstraction. As of february 2020, AMB bridges are available between the following chains: - https://docs.tokenbridge.net/eth-xdai-amb-bridge/about-the-eth-xdai-amb[ETH ⇌ xDai] - https://docs.tokenbridge.net/eth-qdai-bridge/about-the-eth-qdai-amb[ETH ⇌ qDai] - https://docs.tokenbridge.net/eth-etc-amb-bridge/about-the-eth-etc-amb[ETH ⇌ ETC] - https://docs.tokenbridge.net/eth-bsc-amb/about-the-eth-bsc-amb[ETH ⇌ BSC] - https://docs.tokenbridge.net/eth-poa-amb-bridge/about-the-eth-poa-amb[ETH ⇌ POA] - https://docs.tokenbridge.net/bsc-xdai-amb/about-the-bsc-xdai-amb[BSC ⇌ xDai] - https://docs.tokenbridge.net/poa-xdai-amb/about-the-poa-xdai-amb[POA ⇌ xDai] - https://docs.tokenbridge.net/rinkeby-xdai-amb-bridge/about-the-rinkeby-xdai-amb[Rinkeby ⇌ xDai] - https://docs.tokenbridge.net/kovan-sokol-amb-bridge/about-the-kovan-sokol-amb[Kovan ⇌ Sokol] _Available since v4.6._",
     "kind": "dev",

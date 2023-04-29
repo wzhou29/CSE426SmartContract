@@ -47,4 +47,8 @@ contract LOLSkinMarketplace is ERC721 {
         skinIdToIndex[tokenId] = skins.length - 1;
         _safeMint(msg.sender, tokenId);
     }
+
+    function SkinsLen() public view returns(uint256){
+        return skins.length;
+    }
 }

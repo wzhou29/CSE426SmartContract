@@ -15,24 +15,24 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/amb/LibAMB.sol",
     "exportedSymbols": {
       "AMB_Bridge": [
-        30012
+        30021
       ],
       "InvalidCrossChainSender": [
-        1664
+        1673
       ],
       "LibAMB": [
-        1454
+        1463
       ],
       "NotCrossChainCall": [
-        1658
+        1667
       ]
     },
-    "id": 1455,
+    "id": 1464,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1412,
+        "id": 1421,
         "literals": [
           "solidity",
           "^",
@@ -45,20 +45,20 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/vendor/amb/IAMB.sol",
         "file": "../../vendor/amb/IAMB.sol",
-        "id": 1414,
+        "id": 1423,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1455,
-        "sourceUnit": 30013,
+        "scope": 1464,
+        "sourceUnit": 30022,
         "src": "134:61:167",
         "symbolAliases": [
           {
             "foreign": {
-              "id": 1413,
+              "id": 1422,
               "name": "IAMB",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 30012,
+              "referencedDeclaration": 30021,
               "src": "142:4:167",
               "typeDescriptions": {}
             },
@@ -71,11 +71,11 @@
       {
         "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/crosschain/errors.sol",
         "file": "../errors.sol",
-        "id": 1415,
+        "id": 1424,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 1455,
-        "sourceUnit": 1665,
+        "scope": 1464,
+        "sourceUnit": 1674,
         "src": "196:23:167",
         "symbolAliases": [],
         "unitAlias": ""
@@ -87,15 +87,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 1416,
+          "id": 1425,
           "nodeType": "StructuredDocumentation",
           "src": "221:155:167",
           "text": " @dev Primitives for cross-chain aware contracts using the\n https://docs.tokenbridge.net/amb-bridge/about-amb-bridge[AMB]\n family of bridges."
         },
         "fullyImplemented": true,
-        "id": 1454,
+        "id": 1463,
         "linearizedBaseContracts": [
-          1454
+          1463
         ],
         "name": "LibAMB",
         "nameLocation": "385:6:167",
@@ -103,7 +103,7 @@
         "nodes": [
           {
             "body": {
-              "id": 1429,
+              "id": 1438,
               "nodeType": "Block",
               "src": "602:44:167",
               "statements": [
@@ -113,14 +113,14 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 1427,
+                    "id": 1436,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "expression": {
-                        "id": 1424,
+                        "id": 1433,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -131,7 +131,7 @@
                           "typeString": "msg"
                         }
                       },
-                      "id": 1425,
+                      "id": 1434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -148,11 +148,11 @@
                     "nodeType": "BinaryOperation",
                     "operator": "==",
                     "rightExpression": {
-                      "id": 1426,
+                      "id": 1435,
                       "name": "bridge",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1419,
+                      "referencedDeclaration": 1428,
                       "src": "633:6:167",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -165,20 +165,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1423,
-                  "id": 1428,
+                  "functionReturnParameters": 1432,
+                  "id": 1437,
                   "nodeType": "Return",
                   "src": "612:27:167"
                 }
               ]
             },
             "documentation": {
-              "id": 1417,
+              "id": 1426,
               "nodeType": "StructuredDocumentation",
               "src": "398:132:167",
               "text": " @dev Returns whether the current function call is the result of a\n cross-chain message relayed by `bridge`."
             },
-            "id": 1430,
+            "id": 1439,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -186,17 +186,17 @@
             "nameLocation": "544:12:167",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1420,
+              "id": 1429,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1419,
+                  "id": 1428,
                   "mutability": "mutable",
                   "name": "bridge",
                   "nameLocation": "565:6:167",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1430,
+                  "scope": 1439,
                   "src": "557:14:167",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -205,7 +205,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1418,
+                    "id": 1427,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "557:7:167",
@@ -221,17 +221,17 @@
               "src": "556:16:167"
             },
             "returnParameters": {
-              "id": 1423,
+              "id": 1432,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1422,
+                  "id": 1431,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1430,
+                  "scope": 1439,
                   "src": "596:4:167",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -240,7 +240,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1421,
+                    "id": 1430,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "596:4:167",
@@ -254,7 +254,7 @@
               ],
               "src": "595:6:167"
             },
-            "scope": 1454,
+            "scope": 1463,
             "src": "535:111:167",
             "stateMutability": "view",
             "virtual": false,
@@ -262,13 +262,13 @@
           },
           {
             "body": {
-              "id": 1452,
+              "id": 1461,
               "nodeType": "Block",
               "src": "1080:121:167",
               "statements": [
                 {
                   "condition": {
-                    "id": 1441,
+                    "id": 1450,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -280,11 +280,11 @@
                     "subExpression": {
                       "arguments": [
                         {
-                          "id": 1439,
+                          "id": 1448,
                           "name": "bridge",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1433,
+                          "referencedDeclaration": 1442,
                           "src": "1108:6:167",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -299,18 +299,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 1438,
+                        "id": 1447,
                         "name": "isCrossChain",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1430,
+                        "referencedDeclaration": 1439,
                         "src": "1095:12:167",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                           "typeString": "function (address) view returns (bool)"
                         }
                       },
-                      "id": 1440,
+                      "id": 1449,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -331,7 +331,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1445,
+                  "id": 1454,
                   "nodeType": "IfStatement",
                   "src": "1090:53:167",
                   "trueBody": {
@@ -339,18 +339,18 @@
                       "arguments": [],
                       "expression": {
                         "argumentTypes": [],
-                        "id": 1442,
+                        "id": 1451,
                         "name": "NotCrossChainCall",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1658,
+                        "referencedDeclaration": 1667,
                         "src": "1124:17:167",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_error_pure$__$returns$__$",
                           "typeString": "function () pure"
                         }
                       },
-                      "id": 1443,
+                      "id": 1452,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -366,7 +366,7 @@
                         "typeString": "tuple()"
                       }
                     },
-                    "id": 1444,
+                    "id": 1453,
                     "nodeType": "RevertStatement",
                     "src": "1117:26:167"
                   }
@@ -379,11 +379,11 @@
                       "expression": {
                         "arguments": [
                           {
-                            "id": 1447,
+                            "id": 1456,
                             "name": "bridge",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1433,
+                            "referencedDeclaration": 1442,
                             "src": "1171:6:167",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -398,18 +398,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 1446,
+                          "id": 1455,
                           "name": "AMB_Bridge",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 30012,
+                          "referencedDeclaration": 30021,
                           "src": "1160:10:167",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IAMB_$30012_$",
+                            "typeIdentifier": "t_type$_t_contract$_IAMB_$30021_$",
                             "typeString": "type(contract IAMB)"
                           }
                         },
-                        "id": 1448,
+                        "id": 1457,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -421,11 +421,11 @@
                         "src": "1160:18:167",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IAMB_$30012",
+                          "typeIdentifier": "t_contract$_IAMB_$30021",
                           "typeString": "contract IAMB"
                         }
                       },
-                      "id": 1449,
+                      "id": 1458,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -433,14 +433,14 @@
                       "memberLocation": "1179:13:167",
                       "memberName": "messageSender",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 29931,
+                      "referencedDeclaration": 29940,
                       "src": "1160:32:167",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
                         "typeString": "function () view external returns (address)"
                       }
                     },
-                    "id": 1450,
+                    "id": 1459,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -456,20 +456,20 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 1437,
-                  "id": 1451,
+                  "functionReturnParameters": 1446,
+                  "id": 1460,
                   "nodeType": "Return",
                   "src": "1153:41:167"
                 }
               ]
             },
             "documentation": {
-              "id": 1431,
+              "id": 1440,
               "nodeType": "StructuredDocumentation",
               "src": "652:349:167",
               "text": " @dev Returns the address of the sender that triggered the current\n cross-chain message through `bridge`.\n NOTE: {isCrossChain} should be checked before trying to recover the\n sender, as it will revert with `NotCrossChainCall` if the current\n function call is not the result of a cross-chain message."
             },
-            "id": 1453,
+            "id": 1462,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -477,17 +477,17 @@
             "nameLocation": "1015:16:167",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1434,
+              "id": 1443,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1433,
+                  "id": 1442,
                   "mutability": "mutable",
                   "name": "bridge",
                   "nameLocation": "1040:6:167",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1453,
+                  "scope": 1462,
                   "src": "1032:14:167",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -496,7 +496,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1432,
+                    "id": 1441,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1032:7:167",
@@ -512,17 +512,17 @@
               "src": "1031:16:167"
             },
             "returnParameters": {
-              "id": 1437,
+              "id": 1446,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1436,
+                  "id": 1445,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1453,
+                  "scope": 1462,
                   "src": "1071:7:167",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -531,7 +531,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1435,
+                    "id": 1444,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1071:7:167",
@@ -546,14 +546,14 @@
               ],
               "src": "1070:9:167"
             },
-            "scope": 1454,
+            "scope": 1463,
             "src": "1006:195:167",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 1455,
+        "scope": 1464,
         "src": "377:826:167",
         "usedErrors": []
       }
@@ -566,7 +566,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:02.626Z",
+  "updatedAt": "2023-04-29T01:39:05.285Z",
   "devdoc": {
     "details": "Primitives for cross-chain aware contracts using the https://docs.tokenbridge.net/amb-bridge/about-amb-bridge[AMB] family of bridges.",
     "kind": "dev",

@@ -29,15 +29,15 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
     "exportedSymbols": {
       "IERC1822Proxiable": [
-        8910
+        8919
       ]
     },
-    "id": 8911,
+    "id": 8920,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8902,
+        "id": 8911,
         "literals": [
           "solidity",
           "^",
@@ -54,15 +54,15 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 8903,
+          "id": 8912,
           "nodeType": "StructuredDocumentation",
           "src": "138:203:221",
           "text": " @dev ERC1822: Universal Upgradeable Proxy Standard (UUPS) documents a method for upgradeability through a simplified\n proxy whose upgrades are fully controlled by the current implementation."
         },
         "fullyImplemented": false,
-        "id": 8910,
+        "id": 8919,
         "linearizedBaseContracts": [
-          8910
+          8919
         ],
         "name": "IERC1822Proxiable",
         "nameLocation": "352:17:221",
@@ -70,13 +70,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 8904,
+              "id": 8913,
               "nodeType": "StructuredDocumentation",
               "src": "376:438:221",
               "text": " @dev Returns the storage slot that the proxiable contract assumes is being used to store the implementation\n address.\n IMPORTANT: A proxy pointing at a proxiable contract should not be considered proxiable itself, because this risks\n bricking a proxy that upgrades to it, by delegating to itself until out of gas. Thus it is critical that this\n function revert if invoked through a proxy."
             },
             "functionSelector": "52d1902d",
-            "id": 8909,
+            "id": 8918,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -84,23 +84,23 @@
             "nameLocation": "828:13:221",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8905,
+              "id": 8914,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "841:2:221"
             },
             "returnParameters": {
-              "id": 8908,
+              "id": 8917,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8907,
+                  "id": 8916,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8909,
+                  "scope": 8918,
                   "src": "867:7:221",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -109,7 +109,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 8906,
+                    "id": 8915,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "867:7:221",
@@ -123,14 +123,14 @@
               ],
               "src": "866:9:221"
             },
-            "scope": 8910,
+            "scope": 8919,
             "src": "819:57:221",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 8911,
+        "scope": 8920,
         "src": "342:536:221",
         "usedErrors": []
       }
@@ -143,7 +143,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:02.823Z",
+  "updatedAt": "2023-04-29T01:39:05.441Z",
   "devdoc": {
     "details": "ERC1822: Universal Upgradeable Proxy Standard (UUPS) documents a method for upgradeability through a simplified proxy whose upgrades are fully controlled by the current implementation.",
     "kind": "dev",

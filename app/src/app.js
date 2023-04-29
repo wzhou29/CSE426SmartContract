@@ -1,23 +1,8 @@
 web3 = null
-AccountAddress = ""
-Contract = ""
+AccountAddress = {}
+Contract = null
+ContractAddress = "0x42eFdB259CCDB0864A37d35A30e4A021033403d0"
 abi = [
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "name",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "symbol",
-				"type": "string"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
 	{
 		"anonymous": false,
 		"inputs": [
@@ -127,25 +112,6 @@ abi = [
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			}
-		],
-		"name": "balanceOf",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "uint256",
 				"name": "tokenId",
 				"type": "uint256"
@@ -154,81 +120,6 @@ abi = [
 		"name": "buySkin",
 		"outputs": [],
 		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "getApproved",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "operator",
-				"type": "address"
-			}
-		],
-		"name": "isApprovedForAll",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "name",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "ownerOf",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -321,6 +212,139 @@ abi = [
 	{
 		"inputs": [
 			{
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "symbol",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "getApproved",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "operator",
+				"type": "address"
+			}
+		],
+		"name": "isApprovedForAll",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "name",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "ownerOf",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
@@ -366,6 +390,19 @@ abi = [
 				"internalType": "bool",
 				"name": "forSale",
 				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "SkinsLen",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -421,36 +458,14 @@ abi = [
 		],
 		"stateMutability": "view",
 		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "from",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "transferFrom",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	}
 ]
 
 window.onload = function(){
   connectMetaMask()
   EventListener()
-  setInterval(Update,1)
+  // update data every sec
+  setInterval(Update,1000)
 }
 
 window.ethereum.on("accountsChanged", () => {
@@ -462,21 +477,25 @@ window.ethereum.on("chainChanged", () => {
 });
 
 function Update(){
-	if (Skins.length != 0){
-		ListAll = document.getElementById('ListOfSkin')
-		ListOwn = document.getElementById('ListOfOwnSkin')
-		a = ""
-		o = ""
-		for (i=0;i<Skins.length;i++){
-			if (Skins[i].owner == AccountAddress){
-				o += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
+	if (Contract != null){
+		Contract.methods.SkinsLen().call().then(r => {
+			if (r > 0){
+				ListAll = document.getElementById('ListOfSkin')
+				ListOwn = document.getElementById('ListOfOwnSkin')
+				ListAll.innerHTML = ""
+				ListOwn.innerHTML = ""
+				for (i=0;i<r;i++){
+					Contract.methods.skins(i).call().then(r => {
+						if (r[1] == AccountAddress){
+							ListOwn.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + r[0] +"</td><td>" + r[2] +"</td><td>" + r[3] + "</td></tr>"
+						}
+						else{
+							ListAll.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + r[0] +"</td><td>"+ r[1] +"</td><td>" + r[2] +"</td><td>" + r[3] +"</td></tr>"
+						}
+					})
+				}
 			}
-			else{
-				a += "<tr><th scope='row'>"+ Skins[i].id +"</th><td>" + Skins[i].name +"</td><td>"+ Skins[i].owner +"</td><td>" + Skins[i].price +"</td><td>" + Skins[i].ForSale +"</td></tr>"
-			}
-		}
-		ListAll.innerHTML = a
-		ListOwn.innerHTML = o
+		})
 	}
 }
 
@@ -497,21 +516,10 @@ async function GetAccountAddress(){
   AccountAddress = (await web3.eth.getAccounts())[0];
   document.getElementById('AAddress').innerHTML = AccountAddress
   // init SC
-  if (Contract == ""){
+  if (Contract == null){
     Contract = new web3.eth.Contract(abi,ContractAddress,{})
   }
 }
-// class Skin{
-// 	constructor() {
-// 		this.id = 0;
-// 		this.name = '';
-// 		this.owner = '';
-// 		this.price = 0;
-// 		this.ForSale = false;
-// 	}
-// }
-// const Skins = []
-// SkinId = 0
 
 function EventListener(){
   // connect button
@@ -525,16 +533,10 @@ function EventListener(){
 	value = document.getElementById('name').value
 	document.getElementById('name').value = null
     Contract.methods
-	.addSkin("value")
+	.addSkin(value)
 	.send({from: AccountAddress})
 	.on("receipt", (receipt) => {
         alert("Success")
-		// s = new Skin()
-		// s.id = SkinId
-		// s.name = value
-		// s.owner = AccountAddress
-		// SkinId+=1
-		// Skins.push(s)
       })
       .on("error", (err) => {
         alert("Error")

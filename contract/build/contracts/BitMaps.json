@@ -15,15 +15,15 @@
     "absolutePath": "project:/contracts/helper_contracts/@openzeppelin/contracts/utils/structs/BitMaps.sol",
     "exportedSymbols": {
       "BitMaps": [
-        27816
+        27825
       ]
     },
-    "id": 27817,
+    "id": 27826,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 27680,
+        "id": 27689,
         "literals": [
           "solidity",
           "^",
@@ -40,15 +40,15 @@
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
-          "id": 27681,
+          "id": 27690,
           "nodeType": "StructuredDocumentation",
           "src": "133:271:321",
           "text": " @dev Library for managing uint256 to bool mapping in a compact and efficient way, providing the keys are sequential.\n Largely inspired by Uniswap's https://github.com/Uniswap/merkle-distributor/blob/master/contracts/MerkleDistributor.sol[merkle-distributor]."
         },
         "fullyImplemented": true,
-        "id": 27816,
+        "id": 27825,
         "linearizedBaseContracts": [
-          27816
+          27825
         ],
         "name": "BitMaps",
         "nameLocation": "413:7:321",
@@ -56,16 +56,16 @@
         "nodes": [
           {
             "canonicalName": "BitMaps.BitMap",
-            "id": 27686,
+            "id": 27695,
             "members": [
               {
                 "constant": false,
-                "id": 27685,
+                "id": 27694,
                 "mutability": "mutable",
                 "name": "_data",
                 "nameLocation": "479:5:321",
                 "nodeType": "VariableDeclaration",
-                "scope": 27686,
+                "scope": 27695,
                 "src": "451:33:321",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -74,11 +74,11 @@
                   "typeString": "mapping(uint256 => uint256)"
                 },
                 "typeName": {
-                  "id": 27684,
+                  "id": 27693,
                   "keyName": "",
                   "keyNameLocation": "-1:-1:-1",
                   "keyType": {
-                    "id": 27682,
+                    "id": 27691,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "459:7:321",
@@ -96,7 +96,7 @@
                   "valueName": "",
                   "valueNameLocation": "-1:-1:-1",
                   "valueType": {
-                    "id": 27683,
+                    "id": 27692,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "470:7:321",
@@ -112,29 +112,29 @@
             "name": "BitMap",
             "nameLocation": "434:6:321",
             "nodeType": "StructDefinition",
-            "scope": 27816,
+            "scope": 27825,
             "src": "427:64:321",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 27721,
+              "id": 27730,
               "nodeType": "Block",
               "src": "648:137:321",
               "statements": [
                 {
                   "assignments": [
-                    27698
+                    27707
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27698,
+                      "id": 27707,
                       "mutability": "mutable",
                       "name": "bucket",
                       "nameLocation": "666:6:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27721,
+                      "scope": 27730,
                       "src": "658:14:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -143,7 +143,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27697,
+                        "id": 27706,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "658:7:321",
@@ -155,23 +155,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27702,
+                  "id": 27711,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27701,
+                    "id": 27710,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 27699,
+                      "id": 27708,
                       "name": "index",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27692,
+                      "referencedDeclaration": 27701,
                       "src": "675:5:321",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -182,7 +182,7 @@
                     "operator": ">>",
                     "rightExpression": {
                       "hexValue": "38",
-                      "id": 27700,
+                      "id": 27709,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -207,17 +207,17 @@
                 },
                 {
                   "assignments": [
-                    27704
+                    27713
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27704,
+                      "id": 27713,
                       "mutability": "mutable",
                       "name": "mask",
                       "nameLocation": "703:4:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27721,
+                      "scope": 27730,
                       "src": "695:12:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -226,7 +226,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27703,
+                        "id": 27712,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "695:7:321",
@@ -238,20 +238,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27711,
+                  "id": 27720,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27710,
+                    "id": 27719,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "31",
-                      "id": 27705,
+                      "id": 27714,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -274,17 +274,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 27708,
+                          "id": 27717,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 27706,
+                            "id": 27715,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27692,
+                            "referencedDeclaration": 27701,
                             "src": "716:5:321",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -295,7 +295,7 @@
                           "operator": "&",
                           "rightExpression": {
                             "hexValue": "30786666",
-                            "id": 27707,
+                            "id": 27716,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -316,7 +316,7 @@
                           }
                         }
                       ],
-                      "id": 27709,
+                      "id": 27718,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
@@ -344,7 +344,7 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27719,
+                    "id": 27728,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -354,7 +354,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 27717,
+                      "id": 27726,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -362,18 +362,18 @@
                       "leftExpression": {
                         "baseExpression": {
                           "expression": {
-                            "id": 27712,
+                            "id": 27721,
                             "name": "bitmap",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27690,
+                            "referencedDeclaration": 27699,
                             "src": "746:6:321",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                              "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                               "typeString": "struct BitMaps.BitMap storage pointer"
                             }
                           },
-                          "id": 27713,
+                          "id": 27722,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
@@ -381,20 +381,20 @@
                           "memberLocation": "753:5:321",
                           "memberName": "_data",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 27685,
+                          "referencedDeclaration": 27694,
                           "src": "746:12:321",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                             "typeString": "mapping(uint256 => uint256)"
                           }
                         },
-                        "id": 27715,
+                        "id": 27724,
                         "indexExpression": {
-                          "id": 27714,
+                          "id": 27723,
                           "name": "bucket",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 27698,
+                          "referencedDeclaration": 27707,
                           "src": "759:6:321",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -415,11 +415,11 @@
                       "nodeType": "BinaryOperation",
                       "operator": "&",
                       "rightExpression": {
-                        "id": 27716,
+                        "id": 27725,
                         "name": "mask",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27704,
+                        "referencedDeclaration": 27713,
                         "src": "769:4:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -436,7 +436,7 @@
                     "operator": "!=",
                     "rightExpression": {
                       "hexValue": "30",
-                      "id": 27718,
+                      "id": 27727,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -456,20 +456,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 27696,
-                  "id": 27720,
+                  "functionReturnParameters": 27705,
+                  "id": 27729,
                   "nodeType": "Return",
                   "src": "739:39:321"
                 }
               ]
             },
             "documentation": {
-              "id": 27687,
+              "id": 27696,
               "nodeType": "StructuredDocumentation",
               "src": "497:66:321",
               "text": " @dev Returns whether the bit at `index` is set."
             },
-            "id": 27722,
+            "id": 27731,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -477,41 +477,41 @@
             "nameLocation": "577:3:321",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27693,
+              "id": 27702,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27690,
+                  "id": 27699,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nameLocation": "596:6:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27722,
+                  "scope": 27731,
                   "src": "581:21:321",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                    "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                     "typeString": "struct BitMaps.BitMap"
                   },
                   "typeName": {
-                    "id": 27689,
+                    "id": 27698,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27688,
+                      "id": 27697,
                       "name": "BitMap",
                       "nameLocations": [
                         "581:6:321"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27686,
+                      "referencedDeclaration": 27695,
                       "src": "581:6:321"
                     },
-                    "referencedDeclaration": 27686,
+                    "referencedDeclaration": 27695,
                     "src": "581:6:321",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                      "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                       "typeString": "struct BitMaps.BitMap"
                     }
                   },
@@ -519,12 +519,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27692,
+                  "id": 27701,
                   "mutability": "mutable",
                   "name": "index",
                   "nameLocation": "612:5:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27722,
+                  "scope": 27731,
                   "src": "604:13:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -533,7 +533,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27691,
+                    "id": 27700,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "604:7:321",
@@ -548,17 +548,17 @@
               "src": "580:38:321"
             },
             "returnParameters": {
-              "id": 27696,
+              "id": 27705,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27695,
+                  "id": 27704,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27722,
+                  "scope": 27731,
                   "src": "642:4:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -567,7 +567,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 27694,
+                    "id": 27703,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "642:4:321",
@@ -581,7 +581,7 @@
               ],
               "src": "641:6:321"
             },
-            "scope": 27816,
+            "scope": 27825,
             "src": "568:217:321",
             "stateMutability": "view",
             "virtual": false,
@@ -589,17 +589,17 @@
           },
           {
             "body": {
-              "id": 27747,
+              "id": 27756,
               "nodeType": "Block",
               "src": "971:121:321",
               "statements": [
                 {
                   "condition": {
-                    "id": 27733,
+                    "id": 27742,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 27730,
+                    "referencedDeclaration": 27739,
                     "src": "985:5:321",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -607,7 +607,7 @@
                     }
                   },
                   "falseBody": {
-                    "id": 27745,
+                    "id": 27754,
                     "nodeType": "Block",
                     "src": "1041:45:321",
                     "statements": [
@@ -615,23 +615,23 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 27741,
+                              "id": 27750,
                               "name": "bitmap",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27726,
+                              "referencedDeclaration": 27735,
                               "src": "1061:6:321",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                                "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                                 "typeString": "struct BitMaps.BitMap storage pointer"
                               }
                             },
                             {
-                              "id": 27742,
+                              "id": 27751,
                               "name": "index",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27728,
+                              "referencedDeclaration": 27737,
                               "src": "1069:5:321",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -642,7 +642,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                                "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                                 "typeString": "struct BitMaps.BitMap storage pointer"
                               },
                               {
@@ -650,18 +650,18 @@
                                 "typeString": "uint256"
                               }
                             ],
-                            "id": 27740,
+                            "id": 27749,
                             "name": "unset",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27815,
+                            "referencedDeclaration": 27824,
                             "src": "1055:5:321",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BitMap_$27686_storage_ptr_$_t_uint256_$returns$__$",
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BitMap_$27695_storage_ptr_$_t_uint256_$returns$__$",
                               "typeString": "function (struct BitMaps.BitMap storage pointer,uint256)"
                             }
                           },
-                          "id": 27743,
+                          "id": 27752,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -677,17 +677,17 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 27744,
+                        "id": 27753,
                         "nodeType": "ExpressionStatement",
                         "src": "1055:20:321"
                       }
                     ]
                   },
-                  "id": 27746,
+                  "id": 27755,
                   "nodeType": "IfStatement",
                   "src": "981:105:321",
                   "trueBody": {
-                    "id": 27739,
+                    "id": 27748,
                     "nodeType": "Block",
                     "src": "992:43:321",
                     "statements": [
@@ -695,23 +695,23 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 27735,
+                              "id": 27744,
                               "name": "bitmap",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27726,
+                              "referencedDeclaration": 27735,
                               "src": "1010:6:321",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                                "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                                 "typeString": "struct BitMaps.BitMap storage pointer"
                               }
                             },
                             {
-                              "id": 27736,
+                              "id": 27745,
                               "name": "index",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 27728,
+                              "referencedDeclaration": 27737,
                               "src": "1018:5:321",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -722,7 +722,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                                "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                                 "typeString": "struct BitMaps.BitMap storage pointer"
                               },
                               {
@@ -730,18 +730,18 @@
                                 "typeString": "uint256"
                               }
                             ],
-                            "id": 27734,
+                            "id": 27743,
                             "name": "set",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27781,
+                            "referencedDeclaration": 27790,
                             "src": "1006:3:321",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BitMap_$27686_storage_ptr_$_t_uint256_$returns$__$",
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_BitMap_$27695_storage_ptr_$_t_uint256_$returns$__$",
                               "typeString": "function (struct BitMaps.BitMap storage pointer,uint256)"
                             }
                           },
-                          "id": 27737,
+                          "id": 27746,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -757,7 +757,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 27738,
+                        "id": 27747,
                         "nodeType": "ExpressionStatement",
                         "src": "1006:18:321"
                       }
@@ -767,12 +767,12 @@
               ]
             },
             "documentation": {
-              "id": 27723,
+              "id": 27732,
               "nodeType": "StructuredDocumentation",
               "src": "791:71:321",
               "text": " @dev Sets the bit at `index` to the boolean `value`."
             },
-            "id": 27748,
+            "id": 27757,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -780,41 +780,41 @@
             "nameLocation": "876:5:321",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27731,
+              "id": 27740,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27726,
+                  "id": 27735,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nameLocation": "906:6:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27748,
+                  "scope": 27757,
                   "src": "891:21:321",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                    "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                     "typeString": "struct BitMaps.BitMap"
                   },
                   "typeName": {
-                    "id": 27725,
+                    "id": 27734,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27724,
+                      "id": 27733,
                       "name": "BitMap",
                       "nameLocations": [
                         "891:6:321"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27686,
+                      "referencedDeclaration": 27695,
                       "src": "891:6:321"
                     },
-                    "referencedDeclaration": 27686,
+                    "referencedDeclaration": 27695,
                     "src": "891:6:321",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                      "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                       "typeString": "struct BitMaps.BitMap"
                     }
                   },
@@ -822,12 +822,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27728,
+                  "id": 27737,
                   "mutability": "mutable",
                   "name": "index",
                   "nameLocation": "930:5:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27748,
+                  "scope": 27757,
                   "src": "922:13:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -836,7 +836,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27727,
+                    "id": 27736,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "922:7:321",
@@ -849,12 +849,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27730,
+                  "id": 27739,
                   "mutability": "mutable",
                   "name": "value",
                   "nameLocation": "950:5:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27748,
+                  "scope": 27757,
                   "src": "945:10:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -863,7 +863,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 27729,
+                    "id": 27738,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "945:4:321",
@@ -878,12 +878,12 @@
               "src": "881:80:321"
             },
             "returnParameters": {
-              "id": 27732,
+              "id": 27741,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "971:0:321"
             },
-            "scope": 27816,
+            "scope": 27825,
             "src": "867:225:321",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -891,23 +891,23 @@
           },
           {
             "body": {
-              "id": 27780,
+              "id": 27789,
               "nodeType": "Block",
               "src": "1211:126:321",
               "statements": [
                 {
                   "assignments": [
-                    27758
+                    27767
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27758,
+                      "id": 27767,
                       "mutability": "mutable",
                       "name": "bucket",
                       "nameLocation": "1229:6:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27780,
+                      "scope": 27789,
                       "src": "1221:14:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -916,7 +916,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27757,
+                        "id": 27766,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1221:7:321",
@@ -928,23 +928,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27762,
+                  "id": 27771,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27761,
+                    "id": 27770,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 27759,
+                      "id": 27768,
                       "name": "index",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27754,
+                      "referencedDeclaration": 27763,
                       "src": "1238:5:321",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -955,7 +955,7 @@
                     "operator": ">>",
                     "rightExpression": {
                       "hexValue": "38",
-                      "id": 27760,
+                      "id": 27769,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -980,17 +980,17 @@
                 },
                 {
                   "assignments": [
-                    27764
+                    27773
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27764,
+                      "id": 27773,
                       "mutability": "mutable",
                       "name": "mask",
                       "nameLocation": "1266:4:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27780,
+                      "scope": 27789,
                       "src": "1258:12:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -999,7 +999,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27763,
+                        "id": 27772,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1258:7:321",
@@ -1011,20 +1011,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27771,
+                  "id": 27780,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27770,
+                    "id": 27779,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "31",
-                      "id": 27765,
+                      "id": 27774,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1047,17 +1047,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 27768,
+                          "id": 27777,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 27766,
+                            "id": 27775,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27754,
+                            "referencedDeclaration": 27763,
                             "src": "1279:5:321",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1068,7 +1068,7 @@
                           "operator": "&",
                           "rightExpression": {
                             "hexValue": "30786666",
-                            "id": 27767,
+                            "id": 27776,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1089,7 +1089,7 @@
                           }
                         }
                       ],
-                      "id": 27769,
+                      "id": 27778,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
@@ -1113,7 +1113,7 @@
                 },
                 {
                   "expression": {
-                    "id": 27778,
+                    "id": 27787,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1121,18 +1121,18 @@
                     "leftHandSide": {
                       "baseExpression": {
                         "expression": {
-                          "id": 27772,
+                          "id": 27781,
                           "name": "bitmap",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 27752,
+                          "referencedDeclaration": 27761,
                           "src": "1302:6:321",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                            "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                             "typeString": "struct BitMaps.BitMap storage pointer"
                           }
                         },
-                        "id": 27775,
+                        "id": 27784,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -1140,20 +1140,20 @@
                         "memberLocation": "1309:5:321",
                         "memberName": "_data",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 27685,
+                        "referencedDeclaration": 27694,
                         "src": "1302:12:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
                         }
                       },
-                      "id": 27776,
+                      "id": 27785,
                       "indexExpression": {
-                        "id": 27774,
+                        "id": 27783,
                         "name": "bucket",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27758,
+                        "referencedDeclaration": 27767,
                         "src": "1315:6:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1174,11 +1174,11 @@
                     "nodeType": "Assignment",
                     "operator": "|=",
                     "rightHandSide": {
-                      "id": 27777,
+                      "id": 27786,
                       "name": "mask",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27764,
+                      "referencedDeclaration": 27773,
                       "src": "1326:4:321",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1191,19 +1191,19 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 27779,
+                  "id": 27788,
                   "nodeType": "ExpressionStatement",
                   "src": "1302:28:321"
                 }
               ]
             },
             "documentation": {
-              "id": 27749,
+              "id": 27758,
               "nodeType": "StructuredDocumentation",
               "src": "1098:48:321",
               "text": " @dev Sets the bit at `index`."
             },
-            "id": 27781,
+            "id": 27790,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1211,41 +1211,41 @@
             "nameLocation": "1160:3:321",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27755,
+              "id": 27764,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27752,
+                  "id": 27761,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nameLocation": "1179:6:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27781,
+                  "scope": 27790,
                   "src": "1164:21:321",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                    "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                     "typeString": "struct BitMaps.BitMap"
                   },
                   "typeName": {
-                    "id": 27751,
+                    "id": 27760,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27750,
+                      "id": 27759,
                       "name": "BitMap",
                       "nameLocations": [
                         "1164:6:321"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27686,
+                      "referencedDeclaration": 27695,
                       "src": "1164:6:321"
                     },
-                    "referencedDeclaration": 27686,
+                    "referencedDeclaration": 27695,
                     "src": "1164:6:321",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                      "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                       "typeString": "struct BitMaps.BitMap"
                     }
                   },
@@ -1253,12 +1253,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27754,
+                  "id": 27763,
                   "mutability": "mutable",
                   "name": "index",
                   "nameLocation": "1195:5:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27781,
+                  "scope": 27790,
                   "src": "1187:13:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1267,7 +1267,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27753,
+                    "id": 27762,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1187:7:321",
@@ -1282,12 +1282,12 @@
               "src": "1163:38:321"
             },
             "returnParameters": {
-              "id": 27756,
+              "id": 27765,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1211:0:321"
             },
-            "scope": 27816,
+            "scope": 27825,
             "src": "1151:186:321",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1295,23 +1295,23 @@
           },
           {
             "body": {
-              "id": 27814,
+              "id": 27823,
               "nodeType": "Block",
               "src": "1460:127:321",
               "statements": [
                 {
                   "assignments": [
-                    27791
+                    27800
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27791,
+                      "id": 27800,
                       "mutability": "mutable",
                       "name": "bucket",
                       "nameLocation": "1478:6:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27814,
+                      "scope": 27823,
                       "src": "1470:14:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1320,7 +1320,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27790,
+                        "id": 27799,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1470:7:321",
@@ -1332,23 +1332,23 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27795,
+                  "id": 27804,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27794,
+                    "id": 27803,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 27792,
+                      "id": 27801,
                       "name": "index",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 27787,
+                      "referencedDeclaration": 27796,
                       "src": "1487:5:321",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1359,7 +1359,7 @@
                     "operator": ">>",
                     "rightExpression": {
                       "hexValue": "38",
-                      "id": 27793,
+                      "id": 27802,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1384,17 +1384,17 @@
                 },
                 {
                   "assignments": [
-                    27797
+                    27806
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 27797,
+                      "id": 27806,
                       "mutability": "mutable",
                       "name": "mask",
                       "nameLocation": "1515:4:321",
                       "nodeType": "VariableDeclaration",
-                      "scope": 27814,
+                      "scope": 27823,
                       "src": "1507:12:321",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1403,7 +1403,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 27796,
+                        "id": 27805,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1507:7:321",
@@ -1415,20 +1415,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 27804,
+                  "id": 27813,
                   "initialValue": {
                     "commonType": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 27803,
+                    "id": 27812,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "hexValue": "31",
-                      "id": 27798,
+                      "id": 27807,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1451,17 +1451,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 27801,
+                          "id": 27810,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 27799,
+                            "id": 27808,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 27787,
+                            "referencedDeclaration": 27796,
                             "src": "1528:5:321",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1472,7 +1472,7 @@
                           "operator": "&",
                           "rightExpression": {
                             "hexValue": "30786666",
-                            "id": 27800,
+                            "id": 27809,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1493,7 +1493,7 @@
                           }
                         }
                       ],
-                      "id": 27802,
+                      "id": 27811,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
@@ -1517,7 +1517,7 @@
                 },
                 {
                   "expression": {
-                    "id": 27812,
+                    "id": 27821,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1525,18 +1525,18 @@
                     "leftHandSide": {
                       "baseExpression": {
                         "expression": {
-                          "id": 27805,
+                          "id": 27814,
                           "name": "bitmap",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 27785,
+                          "referencedDeclaration": 27794,
                           "src": "1551:6:321",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                            "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                             "typeString": "struct BitMaps.BitMap storage pointer"
                           }
                         },
-                        "id": 27808,
+                        "id": 27817,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -1544,20 +1544,20 @@
                         "memberLocation": "1558:5:321",
                         "memberName": "_data",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 27685,
+                        "referencedDeclaration": 27694,
                         "src": "1551:12:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
                           "typeString": "mapping(uint256 => uint256)"
                         }
                       },
-                      "id": 27809,
+                      "id": 27818,
                       "indexExpression": {
-                        "id": 27807,
+                        "id": 27816,
                         "name": "bucket",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27791,
+                        "referencedDeclaration": 27800,
                         "src": "1564:6:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1578,7 +1578,7 @@
                     "nodeType": "Assignment",
                     "operator": "&=",
                     "rightHandSide": {
-                      "id": 27811,
+                      "id": 27820,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1588,11 +1588,11 @@
                       "prefix": true,
                       "src": "1575:5:321",
                       "subExpression": {
-                        "id": 27810,
+                        "id": 27819,
                         "name": "mask",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 27797,
+                        "referencedDeclaration": 27806,
                         "src": "1576:4:321",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1610,19 +1610,19 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 27813,
+                  "id": 27822,
                   "nodeType": "ExpressionStatement",
                   "src": "1551:29:321"
                 }
               ]
             },
             "documentation": {
-              "id": 27782,
+              "id": 27791,
               "nodeType": "StructuredDocumentation",
               "src": "1343:50:321",
               "text": " @dev Unsets the bit at `index`."
             },
-            "id": 27815,
+            "id": 27824,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1630,41 +1630,41 @@
             "nameLocation": "1407:5:321",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 27788,
+              "id": 27797,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 27785,
+                  "id": 27794,
                   "mutability": "mutable",
                   "name": "bitmap",
                   "nameLocation": "1428:6:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27815,
+                  "scope": 27824,
                   "src": "1413:21:321",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                    "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                     "typeString": "struct BitMaps.BitMap"
                   },
                   "typeName": {
-                    "id": 27784,
+                    "id": 27793,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 27783,
+                      "id": 27792,
                       "name": "BitMap",
                       "nameLocations": [
                         "1413:6:321"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 27686,
+                      "referencedDeclaration": 27695,
                       "src": "1413:6:321"
                     },
-                    "referencedDeclaration": 27686,
+                    "referencedDeclaration": 27695,
                     "src": "1413:6:321",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BitMap_$27686_storage_ptr",
+                      "typeIdentifier": "t_struct$_BitMap_$27695_storage_ptr",
                       "typeString": "struct BitMaps.BitMap"
                     }
                   },
@@ -1672,12 +1672,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 27787,
+                  "id": 27796,
                   "mutability": "mutable",
                   "name": "index",
                   "nameLocation": "1444:5:321",
                   "nodeType": "VariableDeclaration",
-                  "scope": 27815,
+                  "scope": 27824,
                   "src": "1436:13:321",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1686,7 +1686,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 27786,
+                    "id": 27795,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1436:7:321",
@@ -1701,19 +1701,19 @@
               "src": "1412:38:321"
             },
             "returnParameters": {
-              "id": 27789,
+              "id": 27798,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1460:0:321"
             },
-            "scope": 27816,
+            "scope": 27825,
             "src": "1398:189:321",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 27817,
+        "scope": 27826,
         "src": "405:1184:321",
         "usedErrors": []
       }
@@ -1726,7 +1726,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-28T23:56:03.468Z",
+  "updatedAt": "2023-04-29T01:39:05.894Z",
   "devdoc": {
     "details": "Library for managing uint256 to bool mapping in a compact and efficient way, providing the keys are sequential. Largely inspired by Uniswap's https://github.com/Uniswap/merkle-distributor/blob/master/contracts/MerkleDistributor.sol[merkle-distributor].",
     "kind": "dev",
