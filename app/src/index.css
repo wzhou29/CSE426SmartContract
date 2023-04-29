@@ -1,22 +1,23 @@
-h1:first-of-type{
-    font-weight: bold;
-    font-family: cursive;
-    border: dotted;
-    text-align: center;
-    height: 65px;
-    background: skyblue;
+h1{
+    font-weight: bold !important;
+    font-family: cursive !important;
+    border: dotted !important;
+    text-align: center !important;
+    height: 65px !important;
+    background: skyblue !important;
 }
-button:first-of-type{
-    background: lightblue;
-    border-radius: 15px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+button{
+    background: lightblue !important;
+    border-radius: 15px !important;
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+    margin-left: 1% !important;
 }
 button:hover{
     background: rgb(154, 202, 219);
     font-weight: bold;
 }
-table:first-of-type{
+table{
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -24,5 +25,15 @@ h2{
     text-align: center;
 }
 form{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    border: dotted black 4px;
+    margin-left: 1%;
+}
+label{
+    font-weight: bold;
+}
+h6{
     margin-left: 1%;
 }

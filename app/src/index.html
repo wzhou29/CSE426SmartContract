@@ -17,18 +17,18 @@
   <button id="refresh">Refresh</button>
   <h6><b>Account Number: </b><span id="AAddress"></span></h6>
   <form onsubmit="return false">
-    <label for="name"><b>Skin Name:</b></label>
-    <input type="text" id="name">
-    <button id="add">Add</button>
-  </form>
-  <form onsubmit="return false">
     <p><b>Buy Skin</b></p>
     <label for="TokenID">Skin ID: </label>
-    <input type="number" name="TokenID" id="TokenID"><br>
+    <input type="number" name="TokenID" id="TokenID" placeholder="Integer"><br>
     <label for="PayAmount">Price: </label>
-    <input type="number" id="PayAmount" placeholder="In Ether">
+    <input type="number" id="PayAmount" placeholder="Ether">
     <br>
     <button id="Buy">Buy</button>
+  </form>
+  <form onsubmit="return false">
+    <label for="name">Skin Name:</label>
+    <input type="text" id="name" placeholder="String">
+    <button id="add">Add</button>
   </form>
   <h2>All Skins in the Market</h2>
   <table class="table table-bordered" style="border: black; text-align: center; font-weight: bold;">
@@ -62,18 +62,18 @@
   <form onsubmit="return false">
     <p><b>Put Skin For Sale</b></p>
     <label for="SkinName">Skin ID: </label>
-    <input type="number" name="SkinName" id="SkinName"><br>
+    <input type="number" name="SkinName" id="SkinName" placeholder="Integer"><br>
     <label for="Price">Price</label>
-    <input type="number" name="Price" id="Price" placeholder="In Ether">
+    <input type="number" name="Price" id="Price" placeholder="Ether">
     <br>
     <button id="Sale">Sell</button>
   </form>
   <form onsubmit="return false">
     <p><b>Approve to Buy</b></p>
     <label for="Address">Address of Buyer: </label>
-    <input type="text" id="Address"><br>
+    <input type="text" id="Address" placeholder="0x1234............"><br>
     <label for="SkinId">Skin ID: </label>
-    <input type="number" name="SkinId" id="SkinId"><br>
+    <input type="number" name="SkinId" id="SkinId" placeholder="Integer"><br>
     <button id="Approve">Approve</button>
   </form>
 </body>
