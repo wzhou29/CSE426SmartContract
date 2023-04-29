@@ -1277,7 +1277,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-29T16:37:54.593Z",
+  "updatedAt": "2023-04-29T19:19:27.361Z",
   "devdoc": {
     "details": "Extension of the {IGovernor} for timelock supporting modules. _Available since v4.3._",
     "events": {
