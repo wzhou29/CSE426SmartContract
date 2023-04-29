@@ -1,7 +1,7 @@
 web3 = null
 AccountAddress = {}
 Contract = null
-ContractAddress = "0x42eFdB259CCDB0864A37d35A30e4A021033403d0"
+ContractAddress = "0xBD06C7Eb804e8Ac9242985cFF554Dd1D89B40696"
 abi = [
 	{
 		"anonymous": false,
@@ -464,38 +464,37 @@ abi = [
 window.onload = function(){
   connectMetaMask()
   EventListener()
-  // update data every sec
-  setInterval(Update,1000)
-}
+};
 
 window.ethereum.on("accountsChanged", () => {
   GetAccountAddress()
+  Update()
 });
 
 window.ethereum.on("chainChanged", () => {
   GetAccountAddress()
+  Update()
 });
 
-function Update(){
+async function Update(){
 	if (Contract != null){
-		Contract.methods.SkinsLen().call().then(r => {
-			if (r > 0){
-				ListAll = document.getElementById('ListOfSkin')
-				ListOwn = document.getElementById('ListOfOwnSkin')
-				ListAll.innerHTML = ""
-				ListOwn.innerHTML = ""
-				for (i=0;i<r;i++){
-					Contract.methods.skins(i).call().then(r => {
-						if (r[1] == AccountAddress){
-							ListOwn.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + r[0] +"</td><td>" + r[2] +"</td><td>" + r[3] + "</td></tr>"
-						}
-						else{
-							ListAll.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + r[0] +"</td><td>"+ r[1] +"</td><td>" + r[2] +"</td><td>" + r[3] +"</td></tr>"
-						}
-					})
+		NumberOfSkin = await Contract.methods.SkinsLen().call()
+		if (NumberOfSkin > 0){
+			ListAll = document.getElementById('ListOfSkin')
+			ListOwn = document.getElementById('ListOfOwnSkin')
+			ListAll.innerHTML = null
+			ListOwn.innerHTML = null
+			for (i=0;i<NumberOfSkin;i++){
+				result = await Contract.methods.skins(i).call()
+				NotHaveIt = true
+				if (result[1] == AccountAddress){
+					ListOwn.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>" + result[2] +"</td><td>" + result[3] + "</td></tr>"
+				}
+				else{
+					ListAll.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>"+ result[1] +"</td><td>" + result[2] +"</td><td>" + result[3] +"</td></tr>"
 				}
 			}
-		})
+		}
 	}
 }
 
@@ -526,6 +525,7 @@ function EventListener(){
   const ConnectButton = document.getElementById('connect');
   ConnectButton.addEventListener('click', function(e) {
     connectMetaMask()
+	Update()
   });
   // Add skin button
   const AddSkinButton = document.getElementById('add')
@@ -536,6 +536,7 @@ function EventListener(){
 	.addSkin(value)
 	.send({from: AccountAddress})
 	.on("receipt", (receipt) => {
+		Update()
         alert("Success")
       })
       .on("error", (err) => {

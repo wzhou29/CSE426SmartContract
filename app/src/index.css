@@ -1,4 +1,4 @@
-h1{
+h1:first-of-type{
     font-weight: bold;
     font-family: cursive;
     border: dotted;
@@ -9,20 +9,17 @@ h1{
 button:first-of-type{
     background: lightblue;
     border-radius: 15px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 button:hover{
     background: rgb(154, 202, 219);
     font-weight: bold;
 }
-#connect:first-of-type{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-#add:first-of-type{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
 table:first-of-type{
     margin-top: 1%;
     margin-bottom: 1%;
+}
+h2{
+    text-align: center;
 }
