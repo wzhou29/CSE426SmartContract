@@ -1466,7 +1466,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-29T02:37:29.880Z",
+  "updatedAt": "2023-04-29T16:37:54.588Z",
   "devdoc": {
     "details": "Extension of {Governor} for voting weight extraction from a Comp token. _Available since v4.3._",
     "errors": {

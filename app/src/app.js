@@ -1,7 +1,7 @@
 web3 = null
 AccountAddress = {}
 Contract = null
-ContractAddress = "0xBD06C7Eb804e8Ac9242985cFF554Dd1D89B40696"
+ContractAddress = "0x6760F550d23E61a0c4F11F68b44C3bcacFcb320C"
 abi = [
 	{
 		"anonymous": false,
@@ -530,7 +530,7 @@ function EventListener(){
   	// reload button
   	const ReloadButton = document.getElementById('refresh')
   	ReloadButton.addEventListener('click', function(e){
-		window.location.reload()
+		Update()
   	});
   	// Add skin button
   	const AddSkinButton = document.getElementById('add')
@@ -551,7 +551,24 @@ function EventListener(){
 	// Buy Button
 	const BuyButton = document.getElementById('Buy')
 	BuyButton.addEventListener('click', function(e){
-
+		SkinID = document.getElementById('TokenID').value
+		PayAmount = document.getElementById("PayAmount").value
+		Contract.methods
+		.buySkin(SkinID)
+		.send({
+			from: AccountAddress,
+			value: PayAmount,
+			gasLimit: 500000
+		})
+		.on("receipt", (receipt) => {
+			Update()
+    	    alert("Success")
+      	})
+      	.on("error", (err) => {
+        	alert("Error")
+      	});
+		document.getElementById('TokenID').value = null
+		document.getElementById("PayAmount").value = null
 	});
 	// Sell Button
 	const SellButton = document.getElementById('Sale')
@@ -568,10 +585,25 @@ function EventListener(){
       	.on("error", (err) => {
         	alert("Error")
       	});
+		document.getElementById('SkinName').value = null
+		document.getElementById('Price').value = null
 	});
 	// Approve Button
 	const ApproveButton = document.getElementById('Approve')
 	ApproveButton.addEventListener('click', function(e){
-
+		address = document.getElementById("Address").value
+		TokenId = document.getElementById('SkinId').value
+		Contract.methods
+		.approve(address,TokenId)
+		.send({from: AccountAddress})
+		.on("receipt", (receipt) => {
+			Update()
+    	    alert("Success")
+      	})
+      	.on("error", (err) => {
+        	alert("Error")
+      	});
+		document.getElementById("Address").value = null
+		document.getElementById("SkinId").value = null
 	});
 }
