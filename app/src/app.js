@@ -521,26 +521,57 @@ async function GetAccountAddress(){
 }
 
 function EventListener(){
-  // connect button
-  const ConnectButton = document.getElementById('connect');
-  ConnectButton.addEventListener('click', function(e) {
-    connectMetaMask()
-	Update()
-  });
-  // Add skin button
-  const AddSkinButton = document.getElementById('add')
-  AddSkinButton.addEventListener('click', function(e){
-	value = document.getElementById('name').value
-	document.getElementById('name').value = null
-    Contract.methods
-	.addSkin(value)
-	.send({from: AccountAddress})
-	.on("receipt", (receipt) => {
+  	// connect button
+  	const ConnectButton = document.getElementById('connect');
+  	ConnectButton.addEventListener('click', function(e) {
+    	connectMetaMask()
 		Update()
-        alert("Success")
-      })
-      .on("error", (err) => {
-        alert("Error")
-      });
-  });
+  	});
+  	// reload button
+  	const ReloadButton = document.getElementById('refresh')
+  	ReloadButton.addEventListener('click', function(e){
+		window.location.reload()
+  	});
+  	// Add skin button
+  	const AddSkinButton = document.getElementById('add')
+  	AddSkinButton.addEventListener('click', function(e){
+		value = document.getElementById('name').value
+		document.getElementById('name').value = null
+    	Contract.methods
+		.addSkin(value)
+		.send({from: AccountAddress})
+		.on("receipt", (receipt) => {
+			Update()
+    	    alert("Success")
+      	})
+      	.on("error", (err) => {
+        	alert("Error")
+      	});
+	});
+	// Buy Button
+	const BuyButton = document.getElementById('Buy')
+	BuyButton.addEventListener('click', function(e){
+
+	});
+	// Sell Button
+	const SellButton = document.getElementById('Sale')
+	SellButton.addEventListener('click', function(e){
+		TokenID = document.getElementById('SkinName').value
+		price = document.getElementById('Price').value
+		Contract.methods
+		.putSkinForSale(TokenID,price)
+		.send({from: AccountAddress})
+		.on("receipt", (receipt) => {
+			Update()
+    	    alert("Success")
+      	})
+      	.on("error", (err) => {
+        	alert("Error")
+      	});
+	});
+	// Approve Button
+	const ApproveButton = document.getElementById('Approve')
+	ApproveButton.addEventListener('click', function(e){
+
+	});
 }
