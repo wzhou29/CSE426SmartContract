@@ -1,7 +1,6 @@
 web3 = null
 AccountAddress = ""
-Contract = null
-Contracts = {}
+Contract = ""
 abi = [
 	{
 		"inputs": [
@@ -498,22 +497,21 @@ async function GetAccountAddress(){
   AccountAddress = (await web3.eth.getAccounts())[0];
   document.getElementById('AAddress').innerHTML = AccountAddress
   // init SC
-  if (!(AccountAddress in Contracts)){
-    Contracts[AccountAddress] = new web3.eth.Contract(abi,AccountAddress,{})
+  if (Contract == ""){
+    Contract = new web3.eth.Contract(abi,ContractAddress,{})
   }
-  Contract = Contracts[AccountAddress]
 }
-class Skin{
-	constructor() {
-		this.id = 0;
-		this.name = '';
-		this.owner = '';
-		this.price = 0;
-		this.ForSale = false;
-	}
-}
-const Skins = []
-SkinId = 0
+// class Skin{
+// 	constructor() {
+// 		this.id = 0;
+// 		this.name = '';
+// 		this.owner = '';
+// 		this.price = 0;
+// 		this.ForSale = false;
+// 	}
+// }
+// const Skins = []
+// SkinId = 0
 
 function EventListener(){
   // connect button
@@ -531,12 +529,12 @@ function EventListener(){
 	.send({from: AccountAddress})
 	.on("receipt", (receipt) => {
         alert("Success")
-		s = new Skin()
-		s.id = SkinId
-		s.name = value
-		s.owner = AccountAddress
-		SkinId+=1
-		Skins.push(s)
+		// s = new Skin()
+		// s.id = SkinId
+		// s.name = value
+		// s.owner = AccountAddress
+		// SkinId+=1
+		// Skins.push(s)
       })
       .on("error", (err) => {
         alert("Error")
