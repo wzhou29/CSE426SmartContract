@@ -488,10 +488,10 @@ async function Update(){
 				result = await Contract.methods.skins(i).call()
 				NotHaveIt = true
 				if (result[1] == AccountAddress){
-					ListOwn.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>" + result[2] +"</td><td>" + result[3] + "</td></tr>"
+					ListOwn.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>" + web3.utils.fromWei(result[2].toString(),'ether') +" ether</td><td>" + result[3] + "</td></tr>"
 				}
 				else{
-					ListAll.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>"+ result[1] +"</td><td>" + result[2] +"</td><td>" + result[3] +"</td></tr>"
+					ListAll.innerHTML += "<tr><th scope='row'>"+ i +"</th><td>" + result[0] +"</td><td>"+ result[1] +"</td><td>" + web3.utils.fromWei(result[2].toString(),'ether') +" ether</td><td>" + result[3] +"</td></tr>"
 				}
 			}
 		}
@@ -557,7 +557,7 @@ function EventListener(){
 		.buySkin(SkinID)
 		.send({
 			from: AccountAddress,
-			value: PayAmount,
+			value: web3.utils.toWei(PayAmount.toString(),'ether'),
 			gasLimit: 500000
 		})
 		.on("receipt", (receipt) => {
@@ -576,7 +576,7 @@ function EventListener(){
 		TokenID = document.getElementById('SkinName').value
 		price = document.getElementById('Price').value
 		Contract.methods
-		.putSkinForSale(TokenID,price)
+		.putSkinForSale(TokenID,web3.utils.toWei(price.toString(),'ether'))
 		.send({from: AccountAddress})
 		.on("receipt", (receipt) => {
 			Update()
