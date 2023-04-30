@@ -9411,7 +9411,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-29T19:19:27.550Z",
+  "updatedAt": "2023-04-29T23:07:38.401Z",
   "devdoc": {
     "details": "Implementation of the ERC4626 \"Tokenized Vault Standard\" as defined in https://eips.ethereum.org/EIPS/eip-4626[EIP-4626]. This extension allows the minting and burning of \"shares\" (represented using the ERC20 inheritance) in exchange for underlying \"assets\" through standardized {deposit}, {mint}, {redeem} and {burn} workflows. This contract extends the ERC20 standard. Any additional extensions included along it would affect the \"shares\" token represented by this contract and not the \"assets\" token which is an independent contract. CAUTION: When the vault is empty or nearly empty, deposits are at high risk of being stolen through frontrunning with a \"donation\" to the vault that inflates the price of a share. This is variously known as a donation or inflation attack and is essentially a problem of slippage. Vault deployers can protect against this attack by making an initial deposit of a non-trivial amount of the asset, such that price manipulation becomes infeasible. Withdrawals may similarly be affected by slippage. Users can protect against this attack as well unexpected slippage in general by verifying the amount received is as expected, using a wrapper that performs these checks such as https://github.com/fei-protocol/ERC4626#erc4626router-and-base[ERC4626Router]. _Available since v4.7._",
     "events": {
