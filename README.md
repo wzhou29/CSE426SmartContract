@@ -1,4 +1,8 @@
 # CSE426SmartContract
+### Online Website ###
+* https://cse426smartcontract.onrender.com/
+* This contract is deploy on Sepolia network, need Sepolia account to use it.
+
 ### Requirement
 * Ganache
 * Node.js
@@ -22,9 +26,6 @@
 * npm install
 * npm start
 * Go to localhost:3000
-
-### Online Website ###
-* https://cse426smartcontract.onrender.com/
 
 ### Running Program Online ###
 * create render account
