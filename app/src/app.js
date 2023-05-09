@@ -1,7 +1,7 @@
 web3 = null
 AccountAddress = {}
 Contract = null
-ContractAddress = "0x3361329775885d9BfB52D02B0f300254100dfb94"
+ContractAddress = "0x806972B99d6564c1361fb7C15B13d57a16554651"
 abi = [
 	{
 		"anonymous": false,
